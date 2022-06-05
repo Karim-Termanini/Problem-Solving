@@ -6,21 +6,9 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner in;
 		in = new Scanner(System.in);
-		double discount;
-		discount = in.nextDouble();
-		double price;
-		price = in.nextDouble();
-		String s1;
-		double d1;
-		double d2;
-		double d3;
-		d3 = price * discount;
-		double d4;
-		d4 = 100 - discount;
-		d2 = d3 / (d4);
-		d1 = price + d2;
-		s1 = String.format("%.2f", d1);
-		System.out.println(s1);
+		double discount = in.nextDouble();
+		double price = in.nextDouble();
+		System.out.println(String.format("%.2f", price + price * discount / 100 - discount));
 	}
 
 }
