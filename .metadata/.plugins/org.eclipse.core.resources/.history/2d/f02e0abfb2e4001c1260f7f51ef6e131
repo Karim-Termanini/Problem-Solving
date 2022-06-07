@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String interval1 = "[0,25]";
+		String interval2 = "(25,50]";
+		String interval3 = "(50,75]";
+		String interval4 = "(75,100]";
+		String outOfInterval = "Out of Intervals";
+
+	}
+
+}

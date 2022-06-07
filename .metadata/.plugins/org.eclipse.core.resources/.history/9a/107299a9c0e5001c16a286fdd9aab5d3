@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt(), k = in.nextInt(), a = in.nextInt();
+		double sum = (n * k) / a;
+
+		String res = String.valueOf((n * k) / a);
+		System.out.println(res);
+		if (res.contains(",") || res.contains(".")) {
+			System.out.println("double");
+		} else if (res.length() >= 7) {
+			System.out.println("long long");
+		} else {
+			System.out.println("int");
+		}
+	}
+
+}

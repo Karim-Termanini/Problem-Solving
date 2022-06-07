@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double n = in.nextDouble(), k = in.nextDouble(), a = in.nextDouble();
+		long nlong = (long) n;
+		int nint = (int) n;
+		System.out.println(n);
+		System.out.println(nlong == n);
+		System.out.println(nint == n);
+	}
+
+}

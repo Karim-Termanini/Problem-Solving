@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n1 = in.nextInt(), n2 = in.nextInt(), n3 = in.nextInt();
+		int max = 0, mini = 0, mid = 0;
+		if (n1 >= n2 && n1 >= n3) {
+			max = n1;
+			if (n2 >= n3) {
+				mid = n2;
+				mini = n3;
+			} else {
+				mid = n3;
+				mini = n2;
+			}
+		} else if (n2 >= n1 && n2 >= 3) {
+			max = n2;
+			if (n1 >= n3) {
+				mid = n1;
+				mini = n3;
+			} else {
+				mid = n3;
+				mini = n1;
+			}
+		} else if (n3 >= n2 && n3 >= n1) {
+			max = n3;
+			if (n2 >= n1) {
+				mid = n2;
+				mini = n1;
+			} else {
+				mid = n1;
+				mini = n2;
+			}
+		}
+		System.out.println(max);
+		System.out.println(mid);
+		System.out.println(mini);
+
+	}
+
+}

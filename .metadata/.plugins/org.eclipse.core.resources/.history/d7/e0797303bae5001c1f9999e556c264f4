@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		long eyes = in.nextLong(), mouth = in.nextLong(), body = in.nextInt();
+		long counter = 0;
+		if (eyes == 0 || body == 0) {
+			System.out.println(0);
+		} else {
+			
+		}
+	}
+
+}

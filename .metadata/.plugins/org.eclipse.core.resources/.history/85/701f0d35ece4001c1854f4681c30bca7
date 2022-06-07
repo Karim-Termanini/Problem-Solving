@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int Memo, Momo, n;
+		Memo = in.nextInt();
+		Momo = in.nextInt();
+		n = in.nextInt();
+		System.out.println(Memo%n);
+		System.out.println(Momo%n);
+		if(Memo / n == 0) {
+			
+		}
+	}
+
+}

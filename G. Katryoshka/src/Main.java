@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double n = in.nextDouble(), k = in.nextDouble(), a = in.nextDouble();
+		double sum = (n * k) / a;
+		long nlong = (long) sum;
+		double fraction = sum - nlong;
+
+		if (fraction > 0) {
+			System.out.println("double");
+		} else if (nlong <= 2147483647) {
+			System.out.println("int");
+		} else {
+			System.out.println("long long");
+		}
+	}
+}

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+//		int n1 = in.nextInt(), n2 = in.nextInt(), n3 = in.nextInt();
+		char n = in.next().charAt(0);
+		if (n >= 'A' || n <= 'Z') {
+			System.out.println("Alpha");
+		} else if (n >= 'a' || n <= 'z') {
+			System.out.println("Small");
+		} else {
+			System.out.println("Digit");
+		}
+
+	}
+
+}

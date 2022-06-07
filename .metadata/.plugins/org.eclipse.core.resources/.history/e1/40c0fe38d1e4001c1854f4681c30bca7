@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in;
+		in = new Scanner(System.in);
+		int i1;
+		int i2;
+		int i3;
+		i3 = in.nextInt();
+		int i4;
+		i4 = in.nextInt();
+		int i5;
+		i5 = in.nextInt();
+		int i6;
+		i6 = in.nextInt();
+		i2 = i3 * i4 * i5 * i6;
+		i1 = i2 % 100;
+		System.out.println(i1);
+	}
+
+}

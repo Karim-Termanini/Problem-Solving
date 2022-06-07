@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in;
+		in = new Scanner(System.in);
+		double discount, price;
+		discount = in.nextDouble();
+		price = in.nextDouble();
+		double discountInProcent;
+		discountInProcent = 100 - discount;
+		double priceInProcent = price / discountInProcent;
+		System.out.println(String.format("%.2f", price + discount * priceInProcent));
+	}
+
+}

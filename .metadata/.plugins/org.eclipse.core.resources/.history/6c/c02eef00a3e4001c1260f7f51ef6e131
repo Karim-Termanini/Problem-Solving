@@ -1,0 +1,15 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+
+	}
+}
+
+/*
+ *q1 = +x +y
+ *q2 = -x +y
+ *q3 = -x -y
+ *q4 = +x -y 
+ * */

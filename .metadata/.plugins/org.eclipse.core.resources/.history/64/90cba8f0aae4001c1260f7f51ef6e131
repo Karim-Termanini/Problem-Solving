@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String snum = in.nextLine();
+		int n1 = 0, n2 = 0;
+		char plus, minus, mal, auf;
+		for (int i = 0; i < snum.length(); i++) {
+
+		}
+	}
+
+}

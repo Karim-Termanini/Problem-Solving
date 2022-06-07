@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int Days = in.nextInt();
+		int year = Days / 365;
+		Days -= 365 * year / 30;
+
+		System.out.println(year);
+		System.out.println(month);
+	}
+
+}

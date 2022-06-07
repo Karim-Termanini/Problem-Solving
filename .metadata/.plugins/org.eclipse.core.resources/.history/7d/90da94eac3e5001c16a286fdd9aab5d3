@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double n = in.nextDouble(), k = in.nextDouble(), a = in.nextDouble();
+		double sum = (n * k) / a;
+		long nlong = (long) sum;
+		int nint = (int) sum;
+		String s = String.valueOf(sum);
+		System.out.println(s);
+		System.out.println(sum);
+		if (nlong == sum && s.length() > 7 ||  s.length() > 7 && s.contains(".")) {
+			System.out.println("long long");
+		} else if (nint == sum && s.length() <= 7) {
+			System.out.println("int");
+		} else if (s.contains(".")) {
+			System.out.println("double");
+		}
+
+	}
+
+}

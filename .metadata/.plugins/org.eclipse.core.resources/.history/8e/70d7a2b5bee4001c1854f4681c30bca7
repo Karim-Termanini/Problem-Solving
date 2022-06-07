@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String snum = in.nextLine();
+		String num1, num2;
+		int op = 0;
+		int n1 = 0;
+		int n2 = 0;
+		CharSequence smaler = "<", greater = ">", equal = "=";
+		if (snum.contains("<")) {
+			op = snum.indexOf("<");
+		} else if (snum.contains(greater)) {
+			op = snum.indexOf(">");
+		} else if (snum.contains(equal)) {
+			op = snum.indexOf("=");
+		}
+		num1 = snum.substring(0, op);
+		num2 = snum.substring(op + 1, snum.length());
+		
+	}
+
+}

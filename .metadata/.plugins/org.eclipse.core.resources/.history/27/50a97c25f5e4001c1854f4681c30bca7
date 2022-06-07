@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		char ch = in.next().charAt(0);
+		for (int i = ch; i < ch + 1; i++) {
+			if(ch=='z') {
+				(char)(i+1) = 'a';
+			}
+			System.out.println((char) (i + 1));
+		}
+	}
+
+}

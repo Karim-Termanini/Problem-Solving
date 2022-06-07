@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double num = in.nextDouble();
+		int num1 = 0;
+		System.out.println(num1 == (int) num);
+		double n1 = 240.000;
+		int n3 = (int) n1;
+		System.out.println(n3);
+		System.out.println(n3 == n1);
+	}
+
+}

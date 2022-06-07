@@ -1,0 +1,10 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		double n1 = 240.000;
+		double n2 = n1 / 10;
+		System.out.println(n2);
+	}
+
+}

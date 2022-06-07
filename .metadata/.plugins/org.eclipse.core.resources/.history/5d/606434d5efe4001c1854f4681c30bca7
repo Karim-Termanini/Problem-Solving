@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int Memo, Momo, n;
+		Memo = in.nextInt();
+		Momo = in.nextInt();
+		n = in.nextInt();
+		if(Memo % n == 0 && Momo % n == 0) {
+			System.out.println("Both");
+		}else if(Memo % n == 0 && Momo % n != 0) {
+			System.out.println("Memo");
+		}else if(Memo % n != 0 && Momo % n == 0) {
+			System.out.println("Momo");
+		}else {
+			System.out.println("No One");
+		}
+	}
+
+}

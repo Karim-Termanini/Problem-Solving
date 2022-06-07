@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String snum = in.nextLine();
+		int op = 0;
+		int n1 = 0;
+		int n2 = 0;
+		CharSequence smaler = "<", greater = ">", equal = "=";
+		
+	}
+
+}

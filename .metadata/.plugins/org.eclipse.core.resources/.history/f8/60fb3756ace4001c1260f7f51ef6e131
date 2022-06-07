@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String snum = in.nextLine();
+		String n1 ,n2;
+		String num = snum.split("+");
+		for(int i=0;i<num.length;i++) {
+			System.out.println(num);
+		}
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in;
+		in = new Scanner(System.in);
+		int i1;
+		int i2;
+		i2 = in.nextInt() * in.nextInt() * in.nextInt() * in.nextInt();
+		i1 = i2 % 100;
+		System.out.println(i1);
+	}
+
+}

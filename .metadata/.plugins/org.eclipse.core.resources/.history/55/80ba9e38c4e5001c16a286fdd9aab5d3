@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double n = in.nextDouble(), k = in.nextDouble(), a = in.nextDouble();
+		double sum = (n * k) / a;
+		long nlong = (long) sum;
+		int nint = (int) sum;
+		double fraction = sum - nlong;
+		System.out.println(fraction);
+		
+	}
+
+}

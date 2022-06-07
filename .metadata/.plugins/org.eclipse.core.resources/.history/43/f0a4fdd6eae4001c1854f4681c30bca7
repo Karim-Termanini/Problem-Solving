@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in;
+		in = new Scanner(System.in);
+		double discount, price;
+		discount = in.nextDouble();
+		price = in.nextDouble();
+		double discountInProcent;
+		discountInProcent = 100 - discount;
+		String s1;
+		double d1 = price + price * discount / discountInProcent;
+		s1 = String.format("%.2f", d1);
+		System.out.println(s1);
+	}
+
+}

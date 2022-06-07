@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String num = in.nextLine();
+		int op = 0;
+		String n1, n2;
+		int N1, N2;
+		if (num.contains("+"))
+			op = num.indexOf("+");
+		else if (num.contains("-"))
+			op = num.indexOf("-");
+		else if (num.contains("*"))
+			op = num.indexOf("*");
+		else if (num.contains("/"))
+			op = num.indexOf("/");
+		n1 = num.substring(0, op);
+		n2 = num.substring(op + 1, num.length());
+		N1 = Integer.parseInt(n1);
+		N2 = Integer.parseInt(n2);
+		
+	}
+
+}

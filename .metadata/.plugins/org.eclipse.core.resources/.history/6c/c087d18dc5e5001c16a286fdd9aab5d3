@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double n = in.nextDouble(), k = in.nextDouble(), a = in.nextDouble();
+		double sum = (n * k) / a;
+		long nlong = (long) sum;
+		int nint = (int) sum;
+		double fraction = sum - nlong;
+		String numer = String.valueOf(nlong);
+		String num = String.valueOf(nint);
+
+		if (fraction > 0) {
+			System.out.println("double");
+		} else if (fraction == 0 && numer.length() > 7) {
+			System.out.println("long long");
+		} else if (fraction == 0 && num.length() < 7) {
+			System.out.println("int");
+		}
+	}
+
+}

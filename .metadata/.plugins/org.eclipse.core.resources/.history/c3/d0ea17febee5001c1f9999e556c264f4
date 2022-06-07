@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt(), k = in.nextInt(), a = in.nextInt();
+		 int sum = (n * k)/a;
+		 String ssum  = String.valueOf(sum);
+		 System.out.println(ssum);
+	}
+
+}

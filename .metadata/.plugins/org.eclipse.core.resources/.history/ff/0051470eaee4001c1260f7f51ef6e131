@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String snum = in.nextLine();
+		String n1, n2;
+		int op = 0;
+		CharSequence plus = "+", minus = "-", mal = "*", auf = "/";
+		if (snum.contains(plus)) {
+			op = snum.indexOf("+");
+		} else if (snum.contains(minus)) {
+			op = snum.indexOf("-");
+		} else if (snum.contains(mal)) {
+			op = snum.indexOf("*");
+		} else if (snum.contains(auf)) {
+			op = snum.indexOf("/");
+		}
+		System.out.println(op);
+		for (int i = 0; i < snum.length(); i++) {
+			
+		}
+
+	}
+
+}

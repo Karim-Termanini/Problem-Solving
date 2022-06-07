@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		long n1 = in.nextLong(), n2 = in.nextLong(), n3 = in.nextLong();
+		int counter = 0;
+		long maks = 2147483647;
+		long mini = -2147483648;
+		if ((n1 > maks && n1 < mini)) {
+
+		}
+	}
+
+}

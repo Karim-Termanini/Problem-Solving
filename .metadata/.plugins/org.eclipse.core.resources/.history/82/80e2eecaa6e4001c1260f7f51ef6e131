@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n1 = in.nextInt();
+		int n2 = in.nextInt();
+		int n3 = in.nextInt();
+		int max, min;
+		if (n1 > n2 && n1 > n3 && n2 < n3) {
+			max = n1;
+			min = n2;
+		} else if (n2 > n1 && n2 > n3 && n3 < n1) {
+			max = n2;
+			min = n3;
+		} else if (n3 > n1 && n3 > n2 && n1 < n2) {
+			max = n3;
+			min = n1;
+		}
+		System.out.print(min + " " + max);
+
+	}
+
+}

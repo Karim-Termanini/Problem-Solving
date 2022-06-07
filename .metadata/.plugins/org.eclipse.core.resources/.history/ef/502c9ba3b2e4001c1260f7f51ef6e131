@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String interval1 = "[0,25]";
+		String interval2 = "(25,50]";
+		String interval3 = "(50,75]";
+		String interval4 = "(75,100]";
+	}
+
+}

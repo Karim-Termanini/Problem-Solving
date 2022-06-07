@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String num = in.nextLine();
+		int op = 0;
+		String n1, n2;
+		int N1, N2;
+		int sum = 0;
+		if (num.contains("+"))
+			op = num.indexOf("+");
+		else if (num.contains("-"))
+			op = num.indexOf("-");
+		else if (num.contains("*"))
+			op = num.indexOf("*");
+		else if (num.contains("/"))
+			op = num.indexOf("/");
+		n1 = num.substring(0, op);
+		n2 = num.substring(op + 1, num.length());
+		N1 = Integer.parseInt(n1);
+		N2 = Integer.parseInt(n2);
+
+		if (num.contains("+"))
+			sum = N1 + N2;
+		else if (num.contains("-"))
+			sum = N1 - N2;
+		else if (num.contains("*"))
+			sum = N1 * N2;
+		else if (num.contains("/")) {
+			if (N2 == 0) {
+				System.out.println("Error,");
+			} else {
+				sum = N1 / N2;
+			}
+		}
+
+		System.out.println(sum);
+	}
+
+}

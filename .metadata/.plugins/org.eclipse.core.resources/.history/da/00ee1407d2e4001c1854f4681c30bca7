@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		long n1 = in.nextLong();
+		long n2 = in.nextLong();
+		long n3 = in.nextLong();
+		long n4 = in.nextLong();
+		long result = n1 * n2 * n3 * n4;
+		long sum = result % 100;
+		if (sum == 0) {
+			System.out.println(result);
+		} else {
+			System.out.println(sum);
+		}
+
+	}
+
+}
