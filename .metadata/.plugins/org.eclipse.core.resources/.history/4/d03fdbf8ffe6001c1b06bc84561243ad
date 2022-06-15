@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] s0) {
+		Scanner in = new Scanner(System.in);
+		double n = in.nextDouble();
+		int nint = (int) n;
+		n = n - (n % 1);
+		System.out.println(n);
+	}
+
+}

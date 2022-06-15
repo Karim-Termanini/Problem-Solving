@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] s0) {
+		Scanner in = new Scanner(System.in);
+		double n = in.nextDouble();
+		float nfloat = (float) n % 1;
+		System.out.println(nfloat);
+		if(nfloat> 0) {
+			System.out.println("Float");
+		}else {
+			System.out.println("int");
+		}
+
+	}
+
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] s0) {
+		Scanner in = new Scanner(System.in);
+		int discount = in.nextInt(), price = in.nextInt();
+		int sale = 100 - discount;
+		int dsale = sale / price;
+		int dprice = price * dsale;
+		int toatl = dprice + price;
+		System.out.println(toatl);
+	}
+
+}

@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n1 = in.nextInt();
+		
+	}
+
+	public static int Divisors(int num) {
+		int div = num / 2;
+		for (int i = 1; i <= div; i++) {
+			if (num % i == 0) {
+				return num;
+			}
+		}
+		return -1;
+	}
+}

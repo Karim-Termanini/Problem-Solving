@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int counter = in.nextInt();
+		int n1 = in.nextInt();
+		int n2 = in.nextInt();
+		long sum = 0;
+		for (int i = 1; i <= counter; i++) {
+			for (int j = n1; j <= n2; j++) {
+				if ((i % 10 + i / 10 == j) || (i % 10 + i / 10 == j)) {
+					System.out.println(i);
+				} else if ((i % 10 == 0)) {
+					if ((i % 10 + i / 10 == j) || (i % 10 + i / 10 == j)) {
+						System.out.println(i);
+					}
+				}
+			}
+		}
+	}
+}

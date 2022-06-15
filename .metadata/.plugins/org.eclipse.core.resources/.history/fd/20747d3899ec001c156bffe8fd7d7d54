@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+//		int counter = in.nextInt();
+		int n1 = in.nextInt();
+		int n2 = in.nextInt();
+		System.out.println(n1 % 10);
+		System.out.println(n1 / 10);
+
+		System.out.println(n2 % 10);
+		System.out.println(n2 / 10);
+		for (int i = 1; i <= 20; i++) {
+			if (i == n1 || i == n2) {
+				System.out.println(i);
+			} else if ((i % 10 + i / 10 == n1) || (i % 10 + i / 10 == n2)) {
+				System.out.println(i);
+			}
+		}
+	}
+}

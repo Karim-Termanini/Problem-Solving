@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int counter = 3;
+		int n1 = 0, n2 = 0;
+		int sum = 0;
+		while (counter > 0) {
+			n1 = in.nextInt();
+			n2 = in.nextInt();
+			if (n1 <= 0 && n2 <= 0 || n1 <= 0 || n2 <= 0) {
+				return;
+			} else {
+				for (int i = n2; i <= n1; i++) {
+					sum += i;
+					System.out.print(i + " ");
+				}
+				System.out.print("sum =" + sum);
+				System.out.println();
+				sum = 0;
+			}
+			counter--;
+		}
+	}
+
+}

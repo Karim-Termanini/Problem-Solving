@@ -1,20 +1,20 @@
 import java.util.Scanner;
-
+ 
 public class Main {
-
+ 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		double n = in.nextDouble(), k = in.nextDouble(), a = in.nextDouble();
-		double sum = (n * k) / a;
-		long nlong = (long) sum;
-		double fraction = sum - nlong;
-
-		if (fraction > 0) {
-			System.out.println("double");
-		} else if (nlong <= 2147483647) {
-			System.out.println("int");
-		} else {
-			System.out.println("long long");
+		long eyes = in.nextLong(), mouth = in.nextLong(), body = in.nextLong();
+		long sum = 0;
+		if ((mouth >= eyes && mouth >= body) || (mouth < eyes && mouth >= body) || (mouth >= eyes && mouth < body)) {
+			sum = Math.min(eyes, body);
+		} else if (mouth < body && mouth < eyes) {
+			sum = mouth;
+			eyes -= mouth;
+			body -= mouth;
+			sum += Math.min(eyes / 2, body);
 		}
+		System.out.println(sum);
 	}
+ 
 }

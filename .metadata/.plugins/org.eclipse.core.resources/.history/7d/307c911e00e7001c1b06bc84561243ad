@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] s0) {
+		Scanner in = new Scanner(System.in);
+		double n = in.nextDouble();
+		float nfloat = (float) n % 1;
+		System.out.println(nfloat);
+		int nint = (int)n;
+		
+	}
+
+}

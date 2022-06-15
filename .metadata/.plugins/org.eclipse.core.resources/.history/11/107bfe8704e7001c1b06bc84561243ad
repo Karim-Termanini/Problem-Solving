@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] s0) {
+		Scanner in = new Scanner(System.in);
+		char ch = in.next().charAt(0);
+		int letter = (int) ch;
+		int newask = letter + 1;
+		char newchar = (char) newask;
+		if (ch == 'z') {
+			System.out.println("a");
+			return;
+		} else {
+			System.out.println(newchar);
+		}
+	}
+
+}

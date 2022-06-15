@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] s0) {
+		Scanner in = new Scanner(System.in);
+		int d = in.nextInt(), p = in.nextInt();
+		double sale = 100 - d;
+		double dp = p / sale;
+		double dd = dp * d;
+		double total = dd + p;
+		System.out.println(total);
+	}
+
+}

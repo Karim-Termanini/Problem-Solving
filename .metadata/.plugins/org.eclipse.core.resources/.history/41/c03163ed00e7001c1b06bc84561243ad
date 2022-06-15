@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] s0) {
+		Scanner in = new Scanner(System.in);
+		int n1 = in.nextInt();
+		char op = in.next().charAt(0);
+		int n2 = in.nextInt();
+		if (op == '>') {
+			if (n1 > n2) {
+				System.out.println("Right");
+			} else {
+				System.out.println("Wrong");
+			}
+		} else if (op == '=') {
+			if (n1 == n2) {
+				System.out.println("Right");
+			} else {
+				System.out.println("Wrong");
+			}
+		} else if (op == '<') {
+			if (n1 < n2) {
+				System.out.println("Rihgt");
+			} else {
+				System.out.println("Wrong");
+			}
+		}
+
+	}
+
+}
